@@ -9,6 +9,16 @@ public class Ticket {
 		}
 	}
 	
+	public Ticket() {
+		blocks = new Block[8];
+		for(int i = 0; i < blocks.length; i++) {
+			blocks[i] = new Block(6);
+			if (i != 0) {
+				
+			}
+		}
+	}
+	
 	public String toString() {
 		String s = "" + blocks[0];
 		for(int i = 1; i < blocks.length; i++) {
